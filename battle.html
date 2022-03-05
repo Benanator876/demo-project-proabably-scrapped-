@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Battle</title>
+
+    <script defer src="script/utils.js"></script>
+    <script defer src="script/entity.js"></script>
+    <script defer src="script/particle.js"></script>
+    <script defer src="script/move.js"></script>
+    <script defer src="script/image.js"></script>
+    <script defer src="script/gui.js"></script>
+    <script defer src="script/data.js"></script>
+    <script defer src="script/game.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            cursor: none;
+        }
+
+        html,
+        body {
+            background-color: white;
+            height: 100%;
+        }
+
+        canvas {
+            background-color: #aaa;
+            position: absolute;
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+
+<body onload="setup();">
+    <canvas id="canvas"></canvas>
+</body>
+
+</html>
